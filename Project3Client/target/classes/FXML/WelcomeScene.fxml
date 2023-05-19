@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="vbox" fx:controller="ClientController"
+			fx:id="root">
+	<!-- TODO Add Nodes -->
+	
+	<children>
+		<Text fx:id="addressPromptText" styleClass="text" text="Enter the IP address to the server:"/>
+		<HBox>
+			<children>
+				<TextField fx:id="addressText" text="127.0.0.1" styleClass="textfield" onKeyReleased="#getAddressPressEnter"/>
+				<Button fx:id = "enterAddressBtn" styleClass="enterButton" text = "Enter" onAction = "#getAddress"/>
+			</children>
+		</HBox>
+		<Text fx:id="portPromptText" styleClass="text" text="Enter the socket port for the server:"/>
+		<HBox>
+			<children>
+				<TextField fx:id="portText" text="5555" styleClass="textfield" onKeyReleased="#getPortPressEnter"/>
+				<Button fx:id = "enterPortBtn" styleClass="enterButton" text = "Enter" onAction = "#getPort"/>
+			</children>
+		</HBox>
+		<Text fx:id="namePromptText" styleClass="text" text="Enter a name for yourself:"/>
+		<HBox>
+			<children>
+				<TextField fx:id="nameText" styleClass="textfield" onKeyReleased="#getNamePressEnter"/>
+				<Button fx:id = "enterNameBtn" styleClass="enterButton" text = "Enter" onAction = "#getName"/>
+			</children>
+		</HBox>
+		<Text fx:id="connectText" styleClass="text" />
+		<Button fx:id="connectButton" text="Connect" disable="true" onAction="#connectClient"/>
+	</children>
+</VBox>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="border" fx:controller = "ClientController"
+			fx:id = "root2">
+	<!-- TODO Add Nodes -->
+	<top>
+		<Text fx:id = "topText" text="Welcome" styleClass = "textfield"/>
+	</top>
+	<center>
+		<ListView xmlns:fx="http://javafx.com/fxml/1" fx:id = "listItems" styleClass="listview"/>
+	</center>
+	<bottom>
+		<Button fx:id = "selectionSceneBtn" styleClass="button" disable="true" text = "Make Selection" onAction = "#goToSelectionScene"/>
+	</bottom>
+</BorderPane>
+

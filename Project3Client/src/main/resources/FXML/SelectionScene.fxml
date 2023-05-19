@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="vbox" fx:controller="ClientController"
+			fx:id="root3">
+	<!-- TODO Add Nodes -->
+	
+	<children>
+		<Text styleClass="text" text="Choose your number:"/>
+		<HBox>
+			<children>
+				<Button fx:id="play1Btn" mnemonicParsing="false" onAction="#selectPlay">
+					<fx:define>
+						<Image fx:id="num1PlayImage" url="Images/number_1.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num1PlayImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+				</Button>
+				<Button fx:id="play2Btn" mnemonicParsing="false" onAction="#selectPlay">
+					<fx:define>
+						<Image fx:id="num2PlayImage" url="Images/number_2.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num2PlayImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			    <Button fx:id="play3Btn" mnemonicParsing="false" onAction="#selectPlay">
+					<fx:define>
+						<Image fx:id="num3PlayImage" url="Images/number_3.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num3PlayImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+				</Button>
+				<Button fx:id="play4Btn" mnemonicParsing="false" onAction="#selectPlay">
+					<fx:define>
+						<Image fx:id="num4PlayImage" url="Images/number_4.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num4PlayImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			    <Button fx:id="play5Btn" mnemonicParsing="false" onAction="#selectPlay">
+					<fx:define>
+						<Image fx:id="num5PlayImage" url="Images/number_5.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num5PlayImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			</children>
+		</HBox>
+		<Text styleClass="text" text="Choose your guess:"/>
+		<HBox>
+			<children>
+				<Button fx:id="guess1Btn" mnemonicParsing="false" onAction="#selectGuess">
+					<fx:define>
+						<Image fx:id="num1GuessImage" url="Images/number_1.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num1GuessImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+				</Button>
+				<Button fx:id="guess2Btn" mnemonicParsing="false" onAction="#selectGuess">
+					<fx:define>
+						<Image fx:id="num2GuessImage" url="Images/number_2.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num2GuessImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			    <Button fx:id="guess3Btn" mnemonicParsing="false" onAction="#selectGuess">
+					<fx:define>
+						<Image fx:id="num3GuessImage" url="Images/number_3.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num3GuessImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+				</Button>
+				<Button fx:id="guess4Btn" mnemonicParsing="false" onAction="#selectGuess">
+					<fx:define>
+						<Image fx:id="num4GuessImage" url="Images/number_4.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num4GuessImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			    <Button fx:id="guess5Btn" mnemonicParsing="false" onAction="#selectGuess">
+					<fx:define>
+						<Image fx:id="num5GuessImage" url="Images/number_5.jpg" />
+					</fx:define>
+				    <graphic>
+				        <ImageView image="$num5GuessImage" fitHeight="150" fitWidth="125" pickOnBounds="true" preserveRatio="true"/>
+				    </graphic>
+			    </Button>
+			</children>
+		</HBox>
+		<Button fx:id="sendPlayBtn" text="Send Play" disable="true" onAction="#sendPlay"/>
+	</children>
+</VBox>
+

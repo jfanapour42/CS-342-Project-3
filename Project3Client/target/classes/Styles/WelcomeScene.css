@@ -1,0 +1,22 @@
+.button {
+	-fx-font-size: 30px;
+}
+
+.enterButton {
+	-fx-font-size: 16px;
+}
+
+.vbox {
+	-fx-background-color: blue;
+	-fx-padding: 20px;
+    -fx-border-insets:20px;
+    -fx-background-insets: 20px;
+}
+
+.text {
+	-fx-font-size: 20px;
+}
+
+.textfield {
+	-fx-font-size: 20px;
+}
