@@ -1,0 +1,21 @@
+.button {
+	-fx-font-size: 30px;
+}
+
+.border {
+	-fx-background-color: coral;
+	-fx-padding: 70px;
+    -fx-border-insets:20px;
+    -fx-background-insets: 20px;
+}
+
+.text {
+	-fx-background-color: inherit;
+	-fx-font-size: 20px;
+}
+
+.listview {
+	-fx-font-size: 12px;
+	-fx-font-color: red;
+	//-fx-background-color: red;
+}
